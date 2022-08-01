@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>KELVINO SURVEY</title>
+    <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+       <header>
+         <h1 id="title">Kelvino Cafe Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our services</p>
+       </header>
+
+       <form id="survey-form">
+
+        <fieldset>
+          <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required/></label>
+          <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your Email" required/></label>
+          <label id="number-label">Age(optional): <input id="number" type="number" min="18" max="120" placeholder="Age"/></label>
+        </fieldset>
+
+        <fieldset>
+           <label>Which option best describes your current role? 
+             <select id="dropdown">
+              <option>Select current role</option>
+              <option>Student</option> 
+              <option>Full time job</option>
+              <option>Full time learner</option>
+              <option>Prefer not to say</option>
+              <option>Others</option>
+             </select>
+           </label>
+        </fieldset>
+
+        <fieldset>
+          <label><p class="extra">Would you recommend Kelvino Cafe to a friend</p><input type="radio" value="1" name="recommendation" class="inline"/> Definitely</label>
+          <label><input type="radio" value="2" name="recommendation" class="inline"/> Maybe</label>
+          <label><input type="radio" value="3" name="recommendation" class="inline"/> Not sure</label> 
+        </fieldset>
+
+        <fieldset>
+          <label><p class="extra">would you like see improved?(Check all that apply)</p><input type="checkbox" value="1" class="inline"/> Beverages</label>
+          <label><input type="checkbox" value="2" class="inline"/> Food</label>
+           <label><input type="checkbox" value="3" class="inline"/> Services</label>
+           <label>Any comments or suggestions? <textarea name="suggestions" row="3" cols="30" placeholder="Enter your comment here..."></textarea></label>
+        </fieldset>
+      <label><input type="submit" id="submit"/></label>
+       </form>
+  </body>
+</html>
